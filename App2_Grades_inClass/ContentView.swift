@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var gradesViewModel = GradesViewModel()
+    
     var body: some View {
-        startingView()
+        HSplitView {
+            StudentTableView(students: gradesViewModel.students, sortOrder: $gradesViewModel.sortOrder)
+            StudentsListView(students: $gradesViewModel.students)
+        }
     }
     
     @ViewBuilder

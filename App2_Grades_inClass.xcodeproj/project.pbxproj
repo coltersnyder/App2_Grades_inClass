@@ -11,6 +11,7 @@
 		E6486FC42B743FBB00A8E344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6486FC32B743FBB00A8E344 /* ContentView.swift */; };
 		E6486FC62B743FBC00A8E344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6486FC52B743FBC00A8E344 /* Assets.xcassets */; };
 		E6486FC92B743FBC00A8E344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6486FC82B743FBC00A8E344 /* Preview Assets.xcassets */; };
+		E674366D2B7AD761007A15BE /* StudentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674366C2B7AD761007A15BE /* StudentsListView.swift */; };
 		E6D03A2B2B76D89600AE6D25 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D03A2A2B76D89600AE6D25 /* Student.swift */; };
 		E6D03A2D2B76D9B300AE6D25 /* LetterGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D03A2C2B76D9B300AE6D25 /* LetterGrade.swift */; };
 		E6D03A2F2B76DB5900AE6D25 /* AssignmentScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D03A2E2B76DB5900AE6D25 /* AssignmentScore.swift */; };
@@ -29,6 +30,7 @@
 		E6486FC52B743FBC00A8E344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6486FC82B743FBC00A8E344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6486FCA2B743FBC00A8E344 /* App2_Grades_inClass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App2_Grades_inClass.entitlements; sourceTree = "<group>"; };
+		E674366C2B7AD761007A15BE /* StudentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsListView.swift; sourceTree = "<group>"; };
 		E6D03A2A2B76D89600AE6D25 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		E6D03A2C2B76D9B300AE6D25 /* LetterGrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterGrade.swift; sourceTree = "<group>"; };
 		E6D03A2E2B76DB5900AE6D25 /* AssignmentScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentScore.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				E6D03A3A2B76E1C600AE6D25 /* StudentTableView.swift */,
+				E674366C2B7AD761007A15BE /* StudentsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,13 +112,13 @@
 		E6486FD22B7441D300A8E344 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				E6D03A342B76DF4000AE6D25 /* CourseResults.swift */,
 				E6D03A2C2B76D9B300AE6D25 /* LetterGrade.swift */,
 				E6D03A2A2B76D89600AE6D25 /* Student.swift */,
 				E6D03A2E2B76DB5900AE6D25 /* AssignmentScore.swift */,
 				E6D03A302B76DD0700AE6D25 /* Assignment.swift */,
 				E6D03A322B76DE5600AE6D25 /* AssignmentGroup.swift */,
 				E6D03A362B76DFF300AE6D25 /* TestDataExtensions.swift */,
-				E6D03A342B76DF4000AE6D25 /* CourseResults.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				E6D03A3B2B76E1C600AE6D25 /* StudentTableView.swift in Sources */,
 				E6486FC42B743FBB00A8E344 /* ContentView.swift in Sources */,
 				E6D03A2B2B76D89600AE6D25 /* Student.swift in Sources */,
+				E674366D2B7AD761007A15BE /* StudentsListView.swift in Sources */,
 				E6D03A332B76DE5600AE6D25 /* AssignmentGroup.swift in Sources */,
 				E6D03A392B76E15C00AE6D25 /* GradeViewModel.swift in Sources */,
 				E6486FC22B743FBB00A8E344 /* App2_Grades_inClassApp.swift in Sources */,
