@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
+class CourseResults: ObservableObject {
+    var students: [Student.ID: Student] = [:]
+    
+    var assignmentGroups: [AssignmentGroup.ID: AssignmentGroup] = [:]
+}

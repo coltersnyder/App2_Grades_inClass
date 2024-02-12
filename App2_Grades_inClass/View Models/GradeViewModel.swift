@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
+class GradesViewModel: ObservableObject {
+    var courseResults = CourseResults(withTestData: true)
+    
+    
+}

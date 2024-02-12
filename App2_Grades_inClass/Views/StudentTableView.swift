@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct StudentTableView: View {
+    var students: [Student]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Table(students) {
+            TableColumn("Student Name", value: \.name)
+            TableColumn("Student ID", value: \.studentID)
+            TableColumn("Student Score") {
+                Text(String(format: "%.2f", $0.overallScore))
+            }
+            TableColumn("Letter Grade") {
+                Text($0.letterGrade.rawValue)
+            }
+        }
+        .frame(minWidth: 300, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
     }
-}
-
-#Preview {
-    StudentTableView()
 }

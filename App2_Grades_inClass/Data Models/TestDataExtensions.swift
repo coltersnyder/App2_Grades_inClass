@@ -62,7 +62,7 @@ extension Assignment {
             
             let newScore = AssignmentScore(studentID: nextStudent.id, assignmentID: self.id, score: score)
             
-            self.scores[nextStudent.id] = newScore
+            self.scores[newScore.id] = newScore
         }
     }
 }
@@ -75,7 +75,7 @@ extension AssignmentGroup {
         var localAssignments: [Assignment] = []
         
         for index in 1...4 {
-            let newAssignment = Assignment(name: "Assignment \(index)", group: self, maxScore: 10)
+            let newAssignment = Assignment(name: "Assignment \(index)", maxScore: 10, assignmentGroup: self)
             
             newAssignment.createTestScores(forStudents: students)
             

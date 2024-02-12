@@ -8,17 +8,17 @@
 import Foundation
 
 class Student: Identifiable {
-    let id = UUID()
+    let id = Student.ID()
     
     let studentID: String
     
     var name: String
     
-    var overAllScore: Double = 0.0
+    var overallScore: Double = 0.0
     
     var letterGrade: LetterGrade {
         get {
-            LetterGrade(withScore: overAllScore)
+            LetterGrade(withScore: overallScore)
         }
     }
     
@@ -27,9 +27,13 @@ class Student: Identifiable {
         self.studentID = studentID
     }
     
-    convenience init(name: String, studentID: String, overAllScore: Double) {
+    convenience init(name: String, studentID: String, overallScore: Double) {
         self.init(name: name, studentID: studentID)
         
-        self.overAllScore = overAllScore
+        self.overallScore = overallScore
+    }
+    
+    struct ID: Identifiable, Hashable {
+        var id = UUID()
     }
 }
