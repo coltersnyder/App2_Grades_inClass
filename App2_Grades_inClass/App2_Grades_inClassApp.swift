@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct App2_Grades_inClassApp: App {
+    @StateObject var gradeViewModel = GradesViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(gradeViewModel)
         }
     }
 }

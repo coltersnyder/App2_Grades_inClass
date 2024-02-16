@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var gradesViewModel = GradesViewModel()
+    @EnvironmentObject var gradesViewModel: GradesViewModel
     
     var body: some View {
-        HSplitView {
-            StudentTableView(students: gradesViewModel.students, sortOrder: $gradesViewModel.sortOrder)
-            StudentsListView(students: $gradesViewModel.students)
+        VSplitView {
+            DropFileView(url: $gradesViewModel.url)
+                .frame(minHeight: 50.0)
+                .padding(.horizontal)
+            ExampleGradesViewModelPassingView()
+            HSplitView {
+                StudentTableView(students: gradesViewModel.students, sortOrder: $gradesViewModel.sortOrder)
+                StudentsListView(students: $gradesViewModel.students)
+            }
         }
     }
     
@@ -33,8 +39,4 @@ struct ContentView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
