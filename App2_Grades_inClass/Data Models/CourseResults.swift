@@ -15,5 +15,9 @@ class CourseResults: ObservableObject {
         }
     }
     
-    var assignmentGroups: [AssignmentGroup.ID: AssignmentGroup] = [:]
+    var assignmentGroups: [AssignmentGroup.ID: AssignmentGroup] = [:] {
+        didSet {
+            NotificationCenter.default.post(name: .groupsDidChange, object: self)
+        }
+    }
 }

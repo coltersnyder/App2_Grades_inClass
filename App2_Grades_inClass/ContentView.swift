@@ -17,7 +17,12 @@ struct ContentView: View {
                 .padding(.horizontal)
             HSplitView {
                 AssignmentGroupTableView(assignmentGroups: gradesViewModel.assignmentGroups, sortOrder: $gradesViewModel.groupSortOrder)
-                AssignmentGroupListView(assignmentGroups: $gradesViewModel.assignmentGroups)
+                VStack {
+                    AssignmentGroupListView(assignmentGroups: $gradesViewModel.assignmentGroups)
+                    if(!gradesViewModel.addsTo100()){
+                        Text("Warning! The Assignment Category Weights Do Not Add to 100!").padding()
+                    }
+                }
             }
             HSplitView {
                 StudentTableView(students: gradesViewModel.students, sortOrder: $gradesViewModel.sortOrder)

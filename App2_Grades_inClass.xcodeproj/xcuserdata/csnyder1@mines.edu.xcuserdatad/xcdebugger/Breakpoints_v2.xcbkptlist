@@ -156,58 +156,10 @@
             filePath = "App2_Grades_inClass/Data Models/AssignmentGroup.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "updateMax()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EAC8F1E7-2301-434C-B081-7E1C594C4B58"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "App2_Grades_inClass/Data Models/ParsedData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "syncData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EAC8F1E7-2301-434C-B081-7E1C594C4B58 - bd3f2230b86f35f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "App2_Grades_inClass.ParsedData.syncData() -&gt; ()"
-                  moduleName = "App2_Grades_inClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/csnyder1@mines.edu/Library/Mobile%20Documents/com~apple~CloudDocs/CSCI598MacOS/App2_Grades_inClass/App2_Grades_inClass/Data%20Models/ParsedData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "2160">
-               </Location>
-               <Location
-                  uuid = "EAC8F1E7-2301-434C-B081-7E1C594C4B58 - bd3f2230b86f3268"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "App2_Grades_inClass.ParsedData.syncData() -&gt; ()"
-                  moduleName = "App2_Grades_inClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/csnyder1@mines.edu/Library/Mobile%20Documents/com~apple~CloudDocs/CSCI598MacOS/App2_Grades_inClass/App2_Grades_inClass/Data%20Models/ParsedData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "2804">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -10,12 +10,12 @@ import SwiftUI
 
 class GradesViewModel: ObservableObject {
     var courseResults = CourseResults(withTestData: true)
+    var parsedData: ParsedData? = nil
     
     @Published var url: URL? = nil {
         didSet {
-            // TODO: create and call parse file to update State
             let fileParser = FileParser(url: url)
-            let parsedData = fileParser.parseFile()
+            parsedData = fileParser.parseFile()
             parsedData?.syncData()
             if let studs = parsedData?.Students {
                 students = studs
@@ -62,12 +62,26 @@ class GradesViewModel: ObservableObject {
     
     func updateGroupState() {
         self.assignmentGroups = Array(courseResults.assignmentGroups.values).sorted(using: groupSortOrder)
+        parsedData?.AssignmentGroups = Array(courseResults.assignmentGroups.values)
+        parsedData?.syncData()
+        if let studs = parsedData?.Students {
+            self.students = studs
+        }
+    }
+    
+    func addsTo100() -> Bool {
+        var maxWeight = 0.0
+        for assignmentGroup in assignmentGroups {
+            maxWeight += assignmentGroup.weight
+        }
+        
+        return maxWeight == 100.0
     }
     
     init() {
         setNotifications()
-        updateState()
         updateGroupState()
+        updateState()
     }
     
     private func setNotifications() {

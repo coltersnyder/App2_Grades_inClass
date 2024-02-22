@@ -18,7 +18,7 @@ struct StudentsListView: View {
                 Text(nextStudent.studentID)
                 Spacer()
                 Text("Score:")
-                TextField("Score", value: $nextStudent.overallScore, format: .number)
+                TextField("Score", value: $nextStudent.overallScore, format: .number.precision(.fractionLength(1)))
             }
         }
     }

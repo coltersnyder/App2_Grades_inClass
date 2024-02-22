@@ -37,8 +37,6 @@ struct ParsedData {
             var groupTotalWeight = 0.0
             
             for assignmentGroup in AssignmentGroups {
-                assignmentGroup.updateMax()
-                
                 if let score = calcIntermediate[student.id]?[assignmentGroup.id] {
                     finalScore += (((score / assignmentGroup.maxPointsInGroup) * 100) * (assignmentGroup.weight / 100))
                 }

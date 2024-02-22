@@ -16,7 +16,11 @@ class AssignmentGroup: Identifiable {
     
     var assignments: [Assignment.ID: Assignment] = [:]
     
-    var maxPointsInGroup: Double = 0.0
+    var maxPointsInGroup: Double {
+        get {
+            updateMax()
+        }
+    }
     
     init(name: String, weight: Double) {
         self.name = name
@@ -27,14 +31,14 @@ class AssignmentGroup: Identifiable {
         var id = UUID()
     }
     
-    func updateMax() {
+    private func updateMax() -> Double{
         var runningTotal = 0.0
         
         for item in self.assignments.values {
             runningTotal += item.maxScore
         }
         
-        maxPointsInGroup = runningTotal
+        return runningTotal
     }
 }
 
