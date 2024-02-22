@@ -15,7 +15,10 @@ struct ContentView: View {
             DropFileView(url: $gradesViewModel.url)
                 .frame(minHeight: 50.0)
                 .padding(.horizontal)
-            ExampleGradesViewModelPassingView()
+            HSplitView {
+                AssignmentGroupTableView(assignmentGroups: gradesViewModel.assignmentGroups, sortOrder: $gradesViewModel.groupSortOrder)
+                AssignmentGroupListView(assignmentGroups: $gradesViewModel.assignmentGroups)
+            }
             HSplitView {
                 StudentTableView(students: gradesViewModel.students, sortOrder: $gradesViewModel.sortOrder)
                 StudentsListView(students: $gradesViewModel.students)

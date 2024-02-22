@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E614A8AA2B86A3BA0074BE65 /* ParseFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614A8A92B86A3BA0074BE65 /* ParseFile.swift */; };
+		E6215E902B87CB55001725E1 /* ParsedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6215E8F2B87CB55001725E1 /* ParsedData.swift */; };
 		E622180F2B80175300BFF258 /* ExampleGradesViewModelPassingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E622180E2B80175300BFF258 /* ExampleGradesViewModelPassingView.swift */; };
 		E6486FC22B743FBB00A8E344 /* App2_Grades_inClassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6486FC12B743FBB00A8E344 /* App2_Grades_inClassApp.swift */; };
 		E6486FC42B743FBB00A8E344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6486FC32B743FBB00A8E344 /* ContentView.swift */; };
 		E6486FC62B743FBC00A8E344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6486FC52B743FBC00A8E344 /* Assets.xcassets */; };
 		E6486FC92B743FBC00A8E344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6486FC82B743FBC00A8E344 /* Preview Assets.xcassets */; };
+		E66B046C2B87DF7A0065B76C /* AssignmentGroupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B046B2B87DF7A0065B76C /* AssignmentGroupTableView.swift */; };
+		E66B046E2B87E3070065B76C /* AssignmentGroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B046D2B87E3070065B76C /* AssignmentGroupListView.swift */; };
 		E674366D2B7AD761007A15BE /* StudentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674366C2B7AD761007A15BE /* StudentsListView.swift */; };
 		E6AD799C2B7D71EA00C9D475 /* DropFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD799B2B7D71EA00C9D475 /* DropFileView.swift */; };
 		E6AD799E2B7D756800C9D475 /* CSVURLDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD799D2B7D756800C9D475 /* CSVURLDropDelegate.swift */; };
@@ -27,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E614A8A92B86A3BA0074BE65 /* ParseFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseFile.swift; sourceTree = "<group>"; };
+		E6215E8F2B87CB55001725E1 /* ParsedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedData.swift; sourceTree = "<group>"; };
 		E622180E2B80175300BFF258 /* ExampleGradesViewModelPassingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGradesViewModelPassingView.swift; sourceTree = "<group>"; };
 		E6486FBE2B743FBB00A8E344 /* App2_Grades_inClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App2_Grades_inClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6486FC12B743FBB00A8E344 /* App2_Grades_inClassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App2_Grades_inClassApp.swift; sourceTree = "<group>"; };
@@ -34,6 +40,8 @@
 		E6486FC52B743FBC00A8E344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6486FC82B743FBC00A8E344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6486FCA2B743FBC00A8E344 /* App2_Grades_inClass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App2_Grades_inClass.entitlements; sourceTree = "<group>"; };
+		E66B046B2B87DF7A0065B76C /* AssignmentGroupTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentGroupTableView.swift; sourceTree = "<group>"; };
+		E66B046D2B87E3070065B76C /* AssignmentGroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentGroupListView.swift; sourceTree = "<group>"; };
 		E674366C2B7AD761007A15BE /* StudentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsListView.swift; sourceTree = "<group>"; };
 		E6AD799B2B7D71EA00C9D475 /* DropFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropFileView.swift; sourceTree = "<group>"; };
 		E6AD799D2B7D756800C9D475 /* CSVURLDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVURLDropDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +112,8 @@
 				E6D03A3A2B76E1C600AE6D25 /* StudentTableView.swift */,
 				E674366C2B7AD761007A15BE /* StudentsListView.swift */,
 				E6AD799B2B7D71EA00C9D475 /* DropFileView.swift */,
+				E66B046B2B87DF7A0065B76C /* AssignmentGroupTableView.swift */,
+				E66B046D2B87E3070065B76C /* AssignmentGroupListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +138,8 @@
 				E6D03A302B76DD0700AE6D25 /* Assignment.swift */,
 				E6D03A322B76DE5600AE6D25 /* AssignmentGroup.swift */,
 				E6D03A362B76DFF300AE6D25 /* TestDataExtensions.swift */,
+				E614A8A92B86A3BA0074BE65 /* ParseFile.swift */,
+				E6215E8F2B87CB55001725E1 /* ParsedData.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -202,16 +214,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66B046C2B87DF7A0065B76C /* AssignmentGroupTableView.swift in Sources */,
+				E6215E902B87CB55001725E1 /* ParsedData.swift in Sources */,
 				E6D03A312B76DD0700AE6D25 /* Assignment.swift in Sources */,
 				E6D03A352B76DF4000AE6D25 /* CourseResults.swift in Sources */,
 				E6AD799E2B7D756800C9D475 /* CSVURLDropDelegate.swift in Sources */,
 				E6D03A2F2B76DB5900AE6D25 /* AssignmentScore.swift in Sources */,
 				E6D03A3B2B76E1C600AE6D25 /* StudentTableView.swift in Sources */,
+				E614A8AA2B86A3BA0074BE65 /* ParseFile.swift in Sources */,
 				E6AD799C2B7D71EA00C9D475 /* DropFileView.swift in Sources */,
 				E6486FC42B743FBB00A8E344 /* ContentView.swift in Sources */,
 				E622180F2B80175300BFF258 /* ExampleGradesViewModelPassingView.swift in Sources */,
 				E6D03A2B2B76D89600AE6D25 /* Student.swift in Sources */,
 				E674366D2B7AD761007A15BE /* StudentsListView.swift in Sources */,
+				E66B046E2B87E3070065B76C /* AssignmentGroupListView.swift in Sources */,
 				E6D03A332B76DE5600AE6D25 /* AssignmentGroup.swift in Sources */,
 				E6D03A392B76E15C00AE6D25 /* GradeViewModel.swift in Sources */,
 				E6486FC22B743FBB00A8E344 /* App2_Grades_inClassApp.swift in Sources */,

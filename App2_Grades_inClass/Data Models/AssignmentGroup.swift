@@ -16,6 +16,8 @@ class AssignmentGroup: Identifiable {
     
     var assignments: [Assignment.ID: Assignment] = [:]
     
+    var maxPointsInGroup: Double = 0.0
+    
     init(name: String, weight: Double) {
         self.name = name
         self.weight = weight
@@ -24,4 +26,26 @@ class AssignmentGroup: Identifiable {
     struct ID: Identifiable, Hashable {
         var id = UUID()
     }
+    
+    func updateMax() {
+        var runningTotal = 0.0
+        
+        for item in self.assignments.values {
+            runningTotal += item.maxScore
+        }
+        
+        maxPointsInGroup = runningTotal
+    }
+}
+
+extension AssignmentGroup: Equatable {
+    
+    static func == (lhs: AssignmentGroup, rhs: AssignmentGroup) -> Bool {
+        if lhs.name == rhs.name && lhs.weight == rhs.weight {
+            return true
+        } else {
+            return false
+        }
+    }
+    
 }
