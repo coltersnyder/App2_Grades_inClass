@@ -19,6 +19,6 @@ struct AssignmentGroupTableView: View {
                 Text(String(format: "%.2f", $0.weight))
             }
         }
-        .frame(minWidth: 300, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
+        .frame(minWidth: 300, maxWidth: .infinity, minHeight: 150, maxHeight: .infinity)
     }
 }

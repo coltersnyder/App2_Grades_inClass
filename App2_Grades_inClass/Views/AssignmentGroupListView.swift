@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct AssignmentGroupListView: View {
+    @EnvironmentObject var gradeViewModel: GradesViewModel
     @Binding var assignmentGroups: [AssignmentGroup]
+    
+    let formatter = NumberFormatter()
     
     var body: some View {
         List($assignmentGroups) { $nextGroup in
@@ -16,7 +19,7 @@ struct AssignmentGroupListView: View {
                 Text(nextGroup.name)
                 Spacer()
                 Text("Weight:")
-                TextField("Weight", value: $nextGroup.weight, format: .number)
+                TextField("Weight", value: $nextGroup.weight, formatter: formatter, onCommit: gradeViewModel.updateGroupState)
             }
         }
     }

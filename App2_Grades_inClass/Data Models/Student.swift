@@ -16,6 +16,10 @@ class Student: Identifiable {
     
     var overallScore: Double = 0.0
     
+    var assignmentGrades: [Assignment.ID: Double] = [:]
+    
+    var groupGrades: [AssignmentGroup.ID: Double] = [:]
+    
     var letterGrade: LetterGrade {
         get {
             LetterGrade(withScore: overallScore)

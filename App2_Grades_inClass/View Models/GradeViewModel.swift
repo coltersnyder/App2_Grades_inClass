@@ -31,6 +31,13 @@ class GradesViewModel: ObservableObject {
                     courseResults.assignmentGroups[assignmentGroup.id] = assignmentGroup
                 }
             }
+            if let assigns = parsedData?.Assignments {
+                assignments = assigns
+                courseResults.assignments = [:]
+                for assign in assigns {
+                    courseResults.assignments[assign.id] = assign
+                }
+            }
             
             print("New URL: \(String(describing: url))")
         }
@@ -39,6 +46,8 @@ class GradesViewModel: ObservableObject {
     @Published var students: [Student] = []
     
     @Published var assignmentGroups: [AssignmentGroup] = []
+    
+    @Published var assignments: [Assignment] = []
     
     @Published var sortOrder: [KeyPathComparator<Student>] = [
         .init(\.name, order: .forward)
@@ -56,6 +65,14 @@ class GradesViewModel: ObservableObject {
         }
     }
     
+    @Published var assignSortOrder: [KeyPathComparator<Assignment>] = [
+        .init(\.name, order: .forward)
+    ] {
+        didSet {
+            updateAssignState()
+        }
+    }
+    
     func updateState() {
         self.students = Array(courseResults.students.values).sorted(using: sortOrder)
     }
@@ -67,6 +84,10 @@ class GradesViewModel: ObservableObject {
         if let studs = parsedData?.Students {
             self.students = studs
         }
+    }
+    
+    func updateAssignState() {
+        self.assignments = Array(courseResults.assignments.values).sorted(using: assignSortOrder)
     }
     
     func addsTo100() -> Bool {
@@ -82,6 +103,7 @@ class GradesViewModel: ObservableObject {
         setNotifications()
         updateGroupState()
         updateState()
+        updateAssignState()
     }
     
     private func setNotifications() {

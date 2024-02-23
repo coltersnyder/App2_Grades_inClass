@@ -14,6 +14,8 @@
 		E6486FC42B743FBB00A8E344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6486FC32B743FBB00A8E344 /* ContentView.swift */; };
 		E6486FC62B743FBC00A8E344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6486FC52B743FBC00A8E344 /* Assets.xcassets */; };
 		E6486FC92B743FBC00A8E344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6486FC82B743FBC00A8E344 /* Preview Assets.xcassets */; };
+		E664A1C22B8936CE003627BA /* StatisticsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E664A1C12B8936CE003627BA /* StatisticsTableView.swift */; };
+		E664A1C42B8936DC003627BA /* StatisticsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E664A1C32B8936DC003627BA /* StatisticsListView.swift */; };
 		E66B046C2B87DF7A0065B76C /* AssignmentGroupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B046B2B87DF7A0065B76C /* AssignmentGroupTableView.swift */; };
 		E66B046E2B87E3070065B76C /* AssignmentGroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B046D2B87E3070065B76C /* AssignmentGroupListView.swift */; };
 		E674366D2B7AD761007A15BE /* StudentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674366C2B7AD761007A15BE /* StudentsListView.swift */; };
@@ -40,6 +42,8 @@
 		E6486FC52B743FBC00A8E344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6486FC82B743FBC00A8E344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6486FCA2B743FBC00A8E344 /* App2_Grades_inClass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App2_Grades_inClass.entitlements; sourceTree = "<group>"; };
+		E664A1C12B8936CE003627BA /* StatisticsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTableView.swift; sourceTree = "<group>"; };
+		E664A1C32B8936DC003627BA /* StatisticsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsListView.swift; sourceTree = "<group>"; };
 		E66B046B2B87DF7A0065B76C /* AssignmentGroupTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentGroupTableView.swift; sourceTree = "<group>"; };
 		E66B046D2B87E3070065B76C /* AssignmentGroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentGroupListView.swift; sourceTree = "<group>"; };
 		E674366C2B7AD761007A15BE /* StudentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsListView.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				E6AD799B2B7D71EA00C9D475 /* DropFileView.swift */,
 				E66B046B2B87DF7A0065B76C /* AssignmentGroupTableView.swift */,
 				E66B046D2B87E3070065B76C /* AssignmentGroupListView.swift */,
+				E664A1C12B8936CE003627BA /* StatisticsTableView.swift */,
+				E664A1C32B8936DC003627BA /* StatisticsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 			files = (
 				E66B046C2B87DF7A0065B76C /* AssignmentGroupTableView.swift in Sources */,
 				E6215E902B87CB55001725E1 /* ParsedData.swift in Sources */,
+				E664A1C22B8936CE003627BA /* StatisticsTableView.swift in Sources */,
 				E6D03A312B76DD0700AE6D25 /* Assignment.swift in Sources */,
 				E6D03A352B76DF4000AE6D25 /* CourseResults.swift in Sources */,
 				E6AD799E2B7D756800C9D475 /* CSVURLDropDelegate.swift in Sources */,
@@ -232,6 +239,7 @@
 				E6D03A392B76E15C00AE6D25 /* GradeViewModel.swift in Sources */,
 				E6486FC22B743FBB00A8E344 /* App2_Grades_inClassApp.swift in Sources */,
 				E6D03A2D2B76D9B300AE6D25 /* LetterGrade.swift in Sources */,
+				E664A1C42B8936DC003627BA /* StatisticsListView.swift in Sources */,
 				E6D03A372B76DFF300AE6D25 /* TestDataExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

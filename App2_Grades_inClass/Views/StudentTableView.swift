@@ -23,6 +23,6 @@ struct StudentTableView: View {
                 Text($0.letterGrade.rawValue)
             }
         }
-        .frame(minWidth: 300, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
+        .frame(minWidth: 300, maxWidth: .infinity, minHeight: 150, maxHeight: .infinity)
     }
 }

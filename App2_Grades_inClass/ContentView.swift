@@ -16,11 +16,16 @@ struct ContentView: View {
                 .frame(minHeight: 50.0)
                 .padding(.horizontal)
             HSplitView {
+                StatisticsAssignmentTableView(assignments: gradesViewModel.assignments, sortOrder: $gradesViewModel.assignSortOrder)
+                StatisticsGroupTableView(groups: gradesViewModel.assignmentGroups, sortOrder: $gradesViewModel.groupSortOrder)
+                StatisticsListView()
+            }
+            HSplitView {
                 AssignmentGroupTableView(assignmentGroups: gradesViewModel.assignmentGroups, sortOrder: $gradesViewModel.groupSortOrder)
                 VStack {
                     AssignmentGroupListView(assignmentGroups: $gradesViewModel.assignmentGroups)
                     if(!gradesViewModel.addsTo100()){
-                        Text("Warning! The Assignment Category Weights Do Not Add to 100!").padding()
+                        Text("Warning! The Assignment Group Weights Do Not Add to 100!").padding()
                     }
                 }
             }
